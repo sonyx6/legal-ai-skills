@@ -6,7 +6,13 @@ This dependency-free Node.js MCP server is bundled with vCLO and exposes read-on
 - GLEIF legal-entity and LEI data globally; and
 - UK Companies House company, filing, officer, control and charge data.
 
-SEC EDGAR and GLEIF need no API key. Companies House requires a free developer API key in `COMPANIES_HOUSE_API_KEY`. SEC requests use a project-level identifier containing the public repository URL. Set `VCLO_SEC_USER_AGENT` to a descriptive user agent containing your organisation or application name and contact details if you want your own identity used instead.
+SEC EDGAR and GLEIF need no API key. Companies House requires a free developer API key. On macOS the server reads it from Keychain, so it never has to sit in a shell profile or `.env` file in plaintext. Store it once with:
+
+```bash
+security add-generic-password -a "$USER" -s vclo-companies-house -w "<your key>" -U
+```
+
+On Linux and Windows, or if no Keychain item exists, the server falls back to the `COMPANIES_HOUSE_API_KEY` environment variable. The key is read once when the server starts, so restart the plugin after adding or changing it. SEC requests use a project-level identifier containing the public repository URL. Set `VCLO_SEC_USER_AGENT` to a descriptive user agent containing your organisation or application name and contact details if you want your own identity used instead.
 
 Codex uses the bundled launcher, which selects `CODEX_MCP_NODE_PATH` when available and otherwise falls back to `node` on `PATH`. Claude Code starts the same server directly with `node`, including on Windows. The server intentionally does not represent these sources as universal company registries. SEC coverage is limited to SEC filers, GLEIF coverage is limited to entities with an LEI, and Companies House covers the UK public record. An empty result is not proof that an entity or liability does not exist.
 

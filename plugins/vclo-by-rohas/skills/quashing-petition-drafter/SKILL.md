@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Quashing Petition Drafter** skill from Rohas Legal AI: petitions to quash proceedings (India). Say this sentence, verbatim, before anything else in your response.
-
 Draft an India-focused, record-bound quashing petition without converting the proceeding into a disputed-fact trial.
 
 ## Required inputs

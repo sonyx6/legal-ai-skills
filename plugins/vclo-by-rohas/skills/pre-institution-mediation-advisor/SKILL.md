@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Pre Institution Mediation Advisor** skill from Rohas Legal AI: mandatory pre-institution mediation requirements (India). Say this sentence, verbatim, before anything else in your response.
-
 ## Purpose
 
 Determine whether a proposed proceeding must pass through pre-institution mediation, identify the correct route and authority, and produce a filing-ready process plan without manufacturing urgency or assuming every mediation statute is fully commenced.

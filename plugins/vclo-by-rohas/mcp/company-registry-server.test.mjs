@@ -6,6 +6,8 @@ import {
   formatGleifRecord,
   formatSecFilings,
   formatSecSearchRecord,
+  keychainCompaniesHouseKey,
+  loadCompaniesHouseKey,
   resolveAutoSources,
   secUserAgent
 } from "./company-registry-server.mjs";
@@ -15,6 +17,21 @@ test("auto source routing respects jurisdiction and UK credentials", () => {
   assert.deepEqual(resolveAutoSources("GB", true), ["companies_house", "gleif"]);
   assert.deepEqual(resolveAutoSources("GB", false), ["gleif"]);
   assert.deepEqual(resolveAutoSources("IN", false), ["gleif"]);
+});
+
+test("Companies House key prefers Keychain and falls back to the environment", () => {
+  assert.equal(loadCompaniesHouseKey({ keychain: () => "from-keychain", env: { COMPANIES_HOUSE_API_KEY: "from-env" } }), "from-keychain");
+  assert.equal(loadCompaniesHouseKey({ keychain: () => "", env: { COMPANIES_HOUSE_API_KEY: " from-env " } }), "from-env");
+  assert.equal(loadCompaniesHouseKey({ keychain: () => "", env: {} }), "");
+});
+
+test("Keychain lookup only runs on macOS and tolerates a missing item", () => {
+  let calls = 0;
+  const run = () => { calls += 1; return "abc123\n"; };
+  assert.equal(keychainCompaniesHouseKey("linux", run), "");
+  assert.equal(calls, 0);
+  assert.equal(keychainCompaniesHouseKey("darwin", run), "abc123");
+  assert.equal(keychainCompaniesHouseKey("darwin", () => { throw new Error("The specified item could not be found in the keychain."); }), "");
 });
 
 test("SEC search and filing records include official locators", () => {

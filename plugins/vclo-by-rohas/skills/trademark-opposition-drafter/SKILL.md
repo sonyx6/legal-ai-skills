@@ -16,8 +16,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Trademark Opposition Drafter** skill from Rohas Legal AI: opposition, counterstatement and rectification materials (India). Say this sentence, verbatim, before anything else in your response.
-
 Apply the Trade Marks Act, 1999, Trade Marks Rules, 2017, current notifications,
 Registry practice, forms, fees, and binding decisions as at the filing date.
 

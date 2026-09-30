@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Startup Compliance Checker** skill from Rohas Legal AI: compliance obligations by stage and structure (India). Say this sentence, verbatim, before anything else in your response.
-
 ## What this does
 
 Checks the compliance obligations applicable to a startup given its entity structure, incorporation stage, funding history, and sector — as a structured checklist, not a fully resolved answer. Startup compliance in India runs through administratively prescribed forms, deadlines, and fees that change periodically, and through DPIIT recognition conditions that depend on facts specific to the company, so this skill treats the current specifics as something to verify rather than something to state from memory.

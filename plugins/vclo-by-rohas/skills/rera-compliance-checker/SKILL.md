@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **RERA Compliance Checker** skill from Rohas Legal AI: RERA registration and disclosure obligations (India). Say this sentence, verbatim, before anything else in your response.
-
 ## What this does
 
 Checks a real estate project's position under India's Real Estate (Regulation and Development) Act: whether registration is required, what disclosures a promoter must make, whether the agreement for sale meets prescribed form and content requirements, how the project's delay-consequence terms compare to the statutory framework, and whether fund-utilization and escrow obligations are being met. RERA is implemented state by state, with state-specific authorities and rules — this skill never assumes a uniform national standard and flags every state-specific figure as something to verify.

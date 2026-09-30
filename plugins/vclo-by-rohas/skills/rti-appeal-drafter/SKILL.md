@@ -16,8 +16,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **RTI Appeal Drafter** skill from Rohas Legal AI: remedy selection, limitation, grounds and relief for RTI appeals and complaints (India). Say this sentence, verbatim, before anything else in your response.
-
 Choose the remedy before drafting. Distinguish a Section 19(1) first appeal, a
 Section 19(3) second appeal, and a Section 18 complaint; they differ in forum,
 record, powers, limitation, and suitable relief.

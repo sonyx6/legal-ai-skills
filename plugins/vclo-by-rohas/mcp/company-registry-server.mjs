@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { execFileSync } from "node:child_process";
 import readline from "node:readline";
 import { pathToFileURL } from "node:url";
 
@@ -9,6 +10,9 @@ const SEC_BASE = "https://data.sec.gov";
 const SEC_WWW = "https://www.sec.gov";
 const GLEIF_BASE = "https://api.gleif.org/api/v1";
 const COMPANIES_HOUSE_BASE = "https://api.company-information.service.gov.uk";
+const COMPANIES_HOUSE_KEYCHAIN_SERVICE = "vclo-companies-house";
+const COMPANIES_HOUSE_SETUP_HINT = `On macOS store the key in Keychain with: security add-generic-password -a "$USER" -s ${COMPANIES_HOUSE_KEYCHAIN_SERVICE} -w "<your key>" -U. On other platforms set COMPANIES_HOUSE_API_KEY. Then restart the plugin and retry.`;
+let companiesHouseKeyCache;
 let secTickersCache;
 let secTickersCachedAt = 0;
 
@@ -164,10 +168,33 @@ function secHeaders() {
   };
 }
 
+export function keychainCompaniesHouseKey(platform = process.platform, run = execFileSync) {
+  if (platform !== "darwin") return "";
+  try {
+    const output = run("security", ["find-generic-password", "-s", COMPANIES_HOUSE_KEYCHAIN_SERVICE, "-w"], {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+      timeout: 5_000
+    });
+    return String(output ?? "").trim();
+  } catch {
+    return "";
+  }
+}
+
+export function loadCompaniesHouseKey({ keychain = keychainCompaniesHouseKey, env = process.env } = {}) {
+  return keychain() || env.COMPANIES_HOUSE_API_KEY?.trim() || "";
+}
+
+function cachedCompaniesHouseKey() {
+  if (companiesHouseKeyCache === undefined) companiesHouseKeyCache = loadCompaniesHouseKey();
+  return companiesHouseKeyCache;
+}
+
 function companiesHouseKey() {
-  const key = process.env.COMPANIES_HOUSE_API_KEY?.trim();
+  const key = cachedCompaniesHouseKey();
   if (!key) {
-    throw new Error("Companies House requires a free API key. Set COMPANIES_HOUSE_API_KEY, reinstall/restart the plugin, and retry.");
+    throw new Error(`Companies House requires a free API key. ${COMPANIES_HOUSE_SETUP_HINT}`);
   }
   return key;
 }
@@ -414,7 +441,7 @@ async function companiesHouseControlAndCharges(identifier, limit) {
   return result;
 }
 
-export function resolveAutoSources(jurisdiction, hasCompaniesHouseKey = Boolean(process.env.COMPANIES_HOUSE_API_KEY?.trim())) {
+export function resolveAutoSources(jurisdiction, hasCompaniesHouseKey = Boolean(cachedCompaniesHouseKey())) {
   const code = String(jurisdiction || "").trim().toUpperCase();
   if (["GB", "UK", "UNITED KINGDOM", "ENGLAND", "WALES", "SCOTLAND", "NORTHERN IRELAND"].includes(code)) {
     return hasCompaniesHouseKey ? ["companies_house", "gleif"] : ["gleif"];

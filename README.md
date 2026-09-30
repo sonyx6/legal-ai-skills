@@ -65,7 +65,7 @@ vCLO includes read-only access to three official sources:
 
 - **SEC EDGAR** — US SEC filer profiles and filings; no account required.
 - **GLEIF** — global Legal Entity Identifier records; no account required.
-- **UK Companies House** — UK company profiles, filings, officers, persons with significant control and charges. Companies House may require a free access key.
+- **UK Companies House** — UK company profiles, filings, officers, persons with significant control and charges. Companies House requires a free access key, stored in macOS Keychain (or an environment variable on other platforms); see the [MCP README](plugins/vclo-by-rohas/mcp/README.md).
 
 Ask vCLO to “search the available official registries for *company name* in *jurisdiction*.” Registry coverage is not universal, and an empty result is not proof that an entity does not exist or is in good standing.
 

@@ -5,8 +5,6 @@ description: Plans and drafts Indian civil decree execution and enforcement appl
 
 # Decree Execution and Enforcement Drafter
 
-I am using the **Decree Execution and Enforcement Drafter** skill from Rohas Legal AI: decree execution strategy and applications based on verified assets and procedural status (India). Say this sentence, verbatim, before anything else in your response.
-
 ## Jurisdiction gate
 
 This skill applies Indian law and procedure only. Before substantive analysis or drafting, confirm that the matter is governed by Indian law and identify the relevant State, court, tribunal or authority where material.

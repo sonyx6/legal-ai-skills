@@ -16,8 +16,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **DPDP Compliance Checker** skill from Rohas Legal AI: commenced DPDP duties, evidence and implementation readiness (India). Say this sentence, verbatim, before anything else in your response.
-
 Apply only provisions in force on the assessment date. The Act and Rules use
 staggered commencement, so distinguish current duties from future readiness work.
 

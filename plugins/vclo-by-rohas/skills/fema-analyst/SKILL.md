@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **FEMA Analyst** skill from Rohas Legal AI: FEMA position on a cross-border transaction (India). Say this sentence, verbatim, before anything else in your response.
-
 ## What this does
 
 Analyses a cross-border transaction against India's Foreign Exchange Management Act framework: what kind of transaction it is, the residential status of each party under FEMA specifically, whether it falls on the automatic or approval route, what pricing guideline and reporting obligations apply, and any sector-specific restriction. Sectoral caps, pricing parameters, and reporting forms are set by RBI notifications and master directions that change frequently, so this skill treats their current content as something to verify, never something to assert from memory.

@@ -16,8 +16,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **PIL Drafter** skill from Rohas Legal AI: maintainable public interest litigation with bona fides, public injury and workable relief (India). Say this sentence, verbatim, before anything else in your response.
-
 Run a maintainability screen before drafting. Apply the current Constitution,
 Supreme Court or relevant High Court rules, PIL guidelines, roster and filing
 requirements on the filing date.
