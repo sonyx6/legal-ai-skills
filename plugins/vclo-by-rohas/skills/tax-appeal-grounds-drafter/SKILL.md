@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Tax Appeal Grounds Drafter** skill from Rohas Legal AI: grounds of appeal against an assessment or order (India). Say this sentence, verbatim, before anything else in your response.
-
 ## What this does
 
 Drafts the grounds of appeal against a tax assessment or order that has already been passed — the formal statement of why the order is wrong, ground by ground, for filing before the appellate authority. Each ground is tied to a specific part of the order being challenged, factual grounds are kept distinct from legal grounds, and any procedural defect capable of disposing of the whole order is raised prominently rather than buried among the merits grounds.

@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Operational Creditor Application Drafter** skill from Rohas Legal AI: operational creditor insolvency applications (India). Say this sentence, verbatim, before anything else in your response.
-
 Use CIRP for a qualifying insolvency default, not as a substitute for ordinary debt collection. Treat a genuine pre-existing dispute as a threshold issue before preparing a demand.
 
 ## Required inputs

@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Chargesheet Analyst** skill from Rohas Legal AI: reads a chargesheet for gaps, contradictions and legal infirmity (India). Say this sentence, verbatim, before anything else in your response.
-
 ## Purpose
 
 Turn the prosecution filing into a source-linked map of what is alleged, what evidence is said to prove each element, what is missing or inconsistent, and which issues are suitable for discharge, quashing, trial, further disclosure, or specialist challenge.

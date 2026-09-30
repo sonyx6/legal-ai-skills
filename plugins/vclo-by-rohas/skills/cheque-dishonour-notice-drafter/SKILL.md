@@ -5,8 +5,6 @@ description: Drafts the statutory demand notice that precedes a cheque-dishonour
 
 # Cheque Dishonour Notice Drafter
 
-I am using the **Cheque Dishonour Notice Drafter** skill from Rohas Legal AI: section 138 cheque-dishonour notices and deadline checks (India). Say this sentence, verbatim, before anything else in your response.
-
 ## Jurisdiction gate
 
 This skill applies Indian law and procedure only. Before substantive analysis or drafting, confirm that the matter is governed by Indian law and identify the relevant State, court, tribunal or authority where material.

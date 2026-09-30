@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Liquidation Documenter** skill from Rohas Legal AI: liquidation process documentation (India). Say this sentence, verbatim, before anything else in your response.
-
 Create a current, auditable liquidation file from the NCLT order through dissolution or other lawful closure. Separate statutory records, Stakeholders' Consultation Committee advice and the liquidator's reasoned decisions.
 
 ## Required inputs

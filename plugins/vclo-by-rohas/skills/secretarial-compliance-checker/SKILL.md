@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Secretarial Compliance Checker** skill from Rohas Legal AI: secretarial and filing obligations for a company (India). Say this sentence, verbatim, before anything else in your response.
-
 ## Purpose
 
 Determine what the particular company was required to do, what the records prove it did, what remains unverified or overdue, and the safest current remediation path.

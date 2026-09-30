@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Bail Advisor and Drafter** skill from Rohas Legal AI: anticipatory or post-arrest bail — strategy, and drafting when requested (India). Say this sentence, verbatim, before anything else in your response.
-
 ## Purpose
 
 Determine whether and how to seek lawful protection from or release from custody, what evidence supports it, what risks must be confronted candidly, and — when drafting is requested — produce the application itself.

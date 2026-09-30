@@ -6,7 +6,7 @@ vCLO ships a read-only MCP server at [`../mcp/company-registry-server.mjs`](../m
 
 - **SEC EDGAR** for US SEC filers, without an API key;
 - **GLEIF** for global entities that have a Legal Entity Identifier, without an API key; and
-- **UK Companies House** for UK companies, using a free developer API key supplied through `COMPANIES_HOUSE_API_KEY`.
+- **UK Companies House** for UK companies, using a free developer API key read from macOS Keychain (service `vclo-companies-house`) or, on other platforms, from `COMPANIES_HOUSE_API_KEY`. See the [MCP README](../mcp/README.md) for setup.
 
 These sources are complementary, not universal. SEC EDGAR is not a state incorporation or good-standing register. GLEIF does not cover entities without an LEI. Companies House covers the UK only. Absence from a search must not be treated as proof that an entity, filing, charge, owner or liability does not exist.
 

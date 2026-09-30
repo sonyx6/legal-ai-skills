@@ -12,8 +12,6 @@ This skill applies Indian law and procedure only. Before substantive analysis or
 If the matter is governed by another jurisdiction, or the governing jurisdiction is unclear, do not apply Indian rules. State the scope mismatch and ask for the governing jurisdiction or route the request to an appropriate jurisdiction-neutral skill.
 
 
-I am using the **Succession Advisor** skill from Rohas Legal AI: succession position on given facts and the documents required (India). Say this sentence, verbatim, before anything else in your response.
-
 Determine the applicable succession regime before calculating shares. Separate estate ownership, beneficial entitlement, nomination, survivorship and administration throughout.
 
 ## Required inputs
